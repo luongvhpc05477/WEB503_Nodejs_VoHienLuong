@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "70a83633-6f51-418f-aab3-d98f3c1e4f33",
+		"name": "ThiThu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32590121"
+	},
+	"item": [
+		{
+			"name": "danh sách",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ten_nguoi_mua",
+							"value": "Lương",
+							"type": "text"
+						},
+						{
+							"key": "ten_nguoi_ban",
+							"value": "Nhí",
+							"type": "text"
+						},
+						{
+							"key": "gia_tien",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "ngay_ky",
+							"value": "9/4/2024",
+							"type": "text"
+						},
+						{
+							"key": "trang_thai",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7900/api/hopdong",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7900",
+					"path": [
+						"api",
+						"hopdong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ten_nguoi_mua",
+							"value": "Lương",
+							"type": "text"
+						},
+						{
+							"key": "ten_nguoi_ban",
+							"value": "Nhí",
+							"type": "text"
+						},
+						{
+							"key": "gia_tien",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "ngay_ky",
+							"value": "9/4/2024",
+							"type": "text"
+						},
+						{
+							"key": "trang_thai",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7900/api/hopdong/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7900",
+					"path": [
+						"api",
+						"hopdong",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "thêm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ten_nguoi_mua",
+							"value": "Lương",
+							"type": "text"
+						},
+						{
+							"key": "ten_nguoi_ban",
+							"value": "Nhí",
+							"type": "text"
+						},
+						{
+							"key": "gia_tien",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "ngay_ky",
+							"value": "9/4/2024",
+							"type": "text"
+						},
+						{
+							"key": "trang_thai",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7900/api/hopdong",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7900",
+					"path": [
+						"api",
+						"hopdong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sửa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ten_nguoi_mua",
+							"value": "Lương",
+							"type": "text"
+						},
+						{
+							"key": "ten_nguoi_ban",
+							"value": "Nhí",
+							"type": "text"
+						},
+						{
+							"key": "gia_tien",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "ngay_ky",
+							"value": "9/4/2024",
+							"type": "text"
+						},
+						{
+							"key": "trang_thai",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7900/api/hopdong/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7900",
+					"path": [
+						"api",
+						"hopdong",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xóa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ten_nguoi_mua",
+							"value": "Lương",
+							"type": "text"
+						},
+						{
+							"key": "ten_nguoi_ban",
+							"value": "Nhí",
+							"type": "text"
+						},
+						{
+							"key": "gia_tien",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "ngay_ky",
+							"value": "9/4/2024",
+							"type": "text"
+						},
+						{
+							"key": "trang_thai",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7900/api/hopdong/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7900",
+					"path": [
+						"api",
+						"hopdong",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
