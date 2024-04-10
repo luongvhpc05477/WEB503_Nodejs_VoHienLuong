@@ -1,7 +1,7 @@
 const express = require("express");
 let bodyParser = require("body-parser");
 const app = express();
-const port = 7900;
+const port = 7800;
 var jsonParser = bodyParser.json();
 app.use(express.static("public"));
 
@@ -25,12 +25,12 @@ app.set("views ", "./views");
 
 
 //-------------------------------------------------//
-// const adminRoutes = require('./routes/admin');
-// const shopRoutes = require('./routes/shop');
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
 const apiRoutes = require('./routes/api');
 app.use('/api',apiRoutes);
-// app.use('/admin', adminRoutes);
-// app.use(shopRoutes);
+app.use('/admin', adminRoutes);
+app.use(shopRoutes);
 
 
 //-------------------------------------------------//

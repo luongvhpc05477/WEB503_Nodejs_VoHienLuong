@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "95b38baf-a536-4c34-a7c1-1245ff15c0ec",
+		"name": "Postman_user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32590121"
+	},
+	"item": [
+		{
+			"name": "danh sách user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Võ Hiền Lương hehehe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "luongvhpc05477@fpt.edu.vn",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "26022004",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/users",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lấy 1 user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Võ Hiền Lương hehehe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "luongvhpc05477@fpt.edu.vn",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "26022004",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/users/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "thêm 1 user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Võ Hiền Lương hehehe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "luongvhpc05477@fpt.edu.vn",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "26022004",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/users",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sửa sản phẩm",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Võ Hiền Lương hehehe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "luongvhpc05477@fpt.edu.vn",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "26022004",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/users/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "xóa 1 sản phẩm",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Võ Hiền Lương hehehe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "luongvhpc05477@fpt.edu.vn",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "26022004",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/users/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

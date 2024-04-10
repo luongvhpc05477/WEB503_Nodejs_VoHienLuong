@@ -1,6 +1,6 @@
 const express = require('express');
-const apiHopdongController = require('../controller/api/apiHopdongController');
-// const UserController  = require('../controller/api/UserController')
+const apiProductcontroller = require('../controller/api/apiProductcontroller');
+const UserController  = require('../controller/api/UserController')
 const multer = require('multer');
 const upload = multer({ dest: 'images/' });
 const router = express.Router();
@@ -8,22 +8,32 @@ const router = express.Router();
 
 
 // lấy tất cả sản phẩm
-router.get('/hopdong', apiHopdongController.getHopdong);
+router.get('/products', apiProductcontroller.getProducts);
 // lấy 1
-router.get('/hopdong/:id', apiHopdongController.gethopdongById);
+router.get('/products/:id', apiProductcontroller.getProductsById);
+// thêm sản phẩm nè
+router.post('/products',upload.single('image'), apiProductcontroller.postProducts);
 
-// // thêm sản phẩm nè
-router.post('/hopdong' ,apiHopdongController.checkForm,apiHopdongController.postHopdong);
+// xóa dữ liệu 
+router.delete('/products/:id', apiProductcontroller.delProduct);
 
-// // xóa dữ liệu 
-router.delete('/hopdong/:id', apiHopdongController.delhopdong);
-
-// // sửa dữ liệu 
-router.put('/hopdong/:id',apiHopdongController.postEdithopdong);
-
+// sửa dữ liệu 
+router.put('/products/:id',upload.single('image'),apiProductcontroller.postEditProducts);
 
 
 
+// lấy tất cả user
+router.get('/users', UserController.getUsers);
+// lấy 1 user
+router.get('/users/:id', UserController.getUsersById);
+// thêm user
+router.post('/users', UserController.postUser);
+
+// xóa user 
+router.delete('/users/:id', UserController.delUsers);
+
+// sửa user 
+router.put('/users/:id',UserController.postEditUsers);
 
 
 
